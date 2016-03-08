@@ -17,9 +17,11 @@
 .fade-carousel {
     position: relative;
     height: 80vh;
+    max-height: 600px;
 }
 .fade-carousel .carousel-inner .item {
     height: 80vh;
+    max-height: 600px;
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
