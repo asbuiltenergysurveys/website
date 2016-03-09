@@ -141,6 +141,9 @@
     background-image: url("qua-hero.jpg");
 }
 
+/********************************/
+/*       USP traits     */
+/********************************/
 .traits{
     margin:30px;
     color: #1d1d1d !important;
@@ -175,6 +178,54 @@
     }
 
 }
+
+/********************************/
+/*       Find postcode          */
+/********************************/
+.psg-finder{
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 30px;
+
+    svg{
+        fill: currentColor;
+    }
+
+    .psg-finder-icon{
+
+        color: #00386a !important;
+        width: 69px;
+        height: 80px;
+    }
+    .psg-finder-heading{
+        text-transform: uppercase;
+        font-size: 32px;
+        font-weight: 300;
+        color: #00386a;
+        padding: 30px;
+        margin: 0;
+    }
+
+    .input-group-lg{
+        margin: 10px;
+        input {
+            border-radius: 0px !important;
+            border-color: #4bba57;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+        .input-group-addon{
+            border-radius: 0px;
+            border-color: #4bba57;
+            background-color: #4bba57;
+            color: white;
+        }
+    }
+}
+
+
+
 
 /********************************/
 /*          Media Queries       */
