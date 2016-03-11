@@ -127,14 +127,22 @@
 
                 <h2 class="psg-finder-heading">Find your local ENERGY office</h2>
 
-                <div class="input-group input-group-lg">
-                    <input type="text" class="form-control" placeholder="Enter postcode" aria-describedby="basic-addon2">
-                    <span class="input-group-addon btn-primary" id="basic-addon2">Find</span>
+                <%= form_tag("welcome/find_local_office", remote: true) do %>
+                    <div class="input-group input-group-lg">
+                        <%= text_field_tag :postcode, params[:postcode], class: "form-control", placeholder: "Enter postcode"%>
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                <% end %>
+
+                <div id="postcode-results" style="display:none;">
+
                 </div>
 
-                <div id="localofficemap"></div>
             </div>
         </div>
+    </div>
 </div>
-</div>
+
 
