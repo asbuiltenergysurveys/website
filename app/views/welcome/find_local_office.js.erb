@@ -1,9 +1,24 @@
 
-<% if @office.nil? or @office.empty? %>
-    $("#postcode-results").hide(300);
+<% if @office.nil? %>
+    $("#postcodeResults").hide(300);
+<% elsif @office.empty? %>
+
+    $("[id='localOffice']").remove();
+    $("<%= escape_javascript(render "no_local_office") %>").appendTo("#postcodeResults");
+
+    $("#postcodeResults").slideToggle(500, function(){
+        $("html, body").animate({scrollTop: $("#postcodeResults").offset().top},500);
+    });
+
 <% else %>
-    $("[id='local_office']").remove();
-    $("<%= escape_javascript(render "find_local_office") %>").appendTo("#postcode-results");
-    $("#postcode-results").show(300);
+    $("[id='localOffice']").remove();
+    $("<%= escape_javascript(render "find_local_office") %>").appendTo("#postcodeResults");
+
+    $("#postcodeResults").slideToggle(500, function(){
+        $("html, body").animate({scrollTop: $("#postcodeResults").offset().top},500);
+    });
+
 <% end %>
+
+
 

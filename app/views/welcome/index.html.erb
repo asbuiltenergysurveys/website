@@ -127,7 +127,7 @@
 
                 <h2 class="psg-finder-heading">Find your local ENERGY office</h2>
 
-                <%= form_tag("welcome/find_local_office", remote: true) do %>
+                <%= form_tag("welcome/find_local_office", remote: true, id: "findOffice") do %>
                     <div class="input-group input-group-lg">
                         <%= text_field_tag :postcode, params[:postcode], class: "form-control", placeholder: "Enter postcode"%>
                         <span class="input-group-btn">
@@ -136,13 +136,12 @@
                     </div>
                 <% end %>
 
-                <div id="postcode-results" style="display:none;">
-
-                </div>
+                <div id="postcodeResults" style="display:none;"></div>
 
             </div>
         </div>
     </div>
 </div>
+
 
 
