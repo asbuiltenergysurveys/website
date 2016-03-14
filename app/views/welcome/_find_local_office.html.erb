@@ -1,1 +1,10 @@
-<h1>TEST</h1>
+
+<div id="local_office">
+    <h2><%= @office[0].name %></h2>
+    <h3>
+        Email Us: <a href="mailto:<%= @office[0].email %>"><%= @office[0].email %></a>
+    </h3>
+    <h3>
+        Call us: <a href="tel:<%= @office[0].tel %>"><%= @office[0].tel %></a>
+    </h3>
+</div>

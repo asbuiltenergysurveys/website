@@ -1,3 +1,9 @@
 
-$("<%= escape_javascript(render "find_local_office") %>").appendTo("#postcode-results");
-$("#postcode-results").show(300);
+<% if @office.nil? or @office.empty? %>
+    $("#postcode-results").hide(300);
+<% else %>
+    $("[id='local_office']").remove();
+    $("<%= escape_javascript(render "find_local_office") %>").appendTo("#postcode-results");
+    $("#postcode-results").show(300);
+<% end %>
+
