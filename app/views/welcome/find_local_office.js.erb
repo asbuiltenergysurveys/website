@@ -6,10 +6,13 @@
     $("[id='localOffice']").remove();
     $("<%= escape_javascript(render "no_local_office") %>").appendTo("#postcodeResults");
 
-    $("#postcodeResults").slideToggle(500, function(){
-        $("html, body").animate({scrollTop: $("#postcodeResults").offset().top},500);
-    });
+    var visible = $('#postcodeResults').is(':visible');
 
+    if (visible == false) {
+        $("#postcodeResults").slideToggle(500, function () {
+            $("html, body").animate({scrollTop: $("#postcodeResults").offset().top}, 500);
+        });
+    }
 <% else %>
     $("[id='localOffice']").remove();
     $("<%= escape_javascript(render "find_local_office") %>").appendTo("#postcodeResults");
