@@ -7,7 +7,7 @@ class WelcomeController < ApplicationController
         if params["postcode"].empty?
             @office=nil;
         else
-            @office = Office.where("lower(name) LIKE ?", "%#{params["postcode"].downcase}%");
+            @office = Office.where("lower(post_code) LIKE ?", "%#{params["postcode"].downcase}%");
         end
 
         respond_to do |format|
