@@ -15,8 +15,8 @@
     $("<%= escape_javascript(render "find_local_office") %>").appendTo("#postcodeResults");
 
     var visible = $('#postcodeResults').is(':visible');
-alert(visble);
-    if (visible) {
+
+    if (visible == false) {
         $("#postcodeResults").slideToggle(500, function () {
             $("html, body").animate({scrollTop: $("#postcodeResults").offset().top}, 500)
         });
