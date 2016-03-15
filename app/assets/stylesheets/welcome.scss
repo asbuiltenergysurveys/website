@@ -298,7 +298,10 @@
 
     .footer-info {
         h4,p{
-            color: #eee !important;
+            color: #ddd !important;
+            @media screen and (max-width: 767px){
+                text-align: center;
+            }
         }
         p{
             font-size: 12px;
