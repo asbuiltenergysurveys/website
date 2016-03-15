@@ -89,27 +89,29 @@
 }
 
 /********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-
-}
-
-/********************************/
 /*          Custom Buttons      */
 /********************************/
-.btn.btn-hero,.btn.btn-hero:hover,
-.btn.btn-hero:focus {
+.btn.btn-hero,.btn.btn-hero:focus {
     box-shadow: none;
     font-size: 20px;
     letter-spacing: 1px;
     margin-top: 15px;
     padding: 14px 34px;
+    color: white !important;
 }
 
-.btn-hero-trans{
+.btn.btn-hero:focus.btn-hero-trans, .btn.btn-hero.btn-hero-trans:hover {
+    background-color: rgba(255,255,255,.3);
+}
+
+.btn-hero-trans {
     background-color: rgba(255,255,255,.1);
     border-color: #fff;
+}
+
+.btn.btn-hero:focus.btn-hero-green, .btn.btn-hero.btn-hero-green:hover {
+    background-color: #55d262;
+    border-color: #55d262;
 }
 
 .btn-hero-green{
