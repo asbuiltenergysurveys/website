@@ -1,0 +1,29 @@
+
+<!-- Postcode area -->
+<div class="psg-finder">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                <svg class="icon psg-finder-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid"  viewBox="0 0 68 79">
+                    <path d="M23.712,67.290 L44.441,79.008 L68.005,67.352 L68.005,31.816 L44.425,43.479 L35.248,38.292 L35.248,20.033 L35.463,20.002 C40.415,19.283 44.148,15.009 44.148,10.060 C44.148,4.510 39.585,-0.004 33.977,-0.004 C28.369,-0.004 23.806,4.510 23.806,10.060 C23.806,15.042 27.568,19.322 32.556,20.011 L32.773,20.041 L32.773,36.892 L23.569,31.690 L0.015,41.159 L0.015,76.714 L23.606,67.230 L23.712,67.290 ZM47.159,44.865 L65.529,35.779 L65.529,65.838 L47.159,74.925 L47.159,44.865 ZM26.281,10.060 C26.281,5.861 29.733,2.445 33.977,2.445 C38.221,2.445 41.673,5.861 41.673,10.060 C41.673,14.258 38.221,17.673 33.977,17.673 C29.733,17.673 26.281,14.258 26.281,10.060 ZM20.861,65.690 L2.491,73.074 L2.491,42.808 L20.861,35.422 L20.861,65.690 ZM23.337,34.279 L32.773,39.613 L32.773,52.528 L35.248,52.528 L35.248,41.013 L44.684,46.346 L44.684,76.424 L23.337,64.356 L23.337,34.279 Z"></path>
+                </svg>
+
+                <h2 class="psg-finder-heading">Find your local ENERGY office</h2>
+
+                <%= form_tag("welcome/find_local_office", remote: true, id: "findOffice") do %>
+                    <div class="input-group input-group-lg">
+                        <%= text_field_tag :postcode, params[:postcode], class: "form-control", placeholder: "Enter postcode"%>
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                <% end %>
+
+                <div id="postcodeResults" style="display:none;"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
