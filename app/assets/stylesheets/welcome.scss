@@ -292,6 +292,22 @@
     }
 }
 
+.footer{
+    padding: 60px 30px 60px 30px;
+    background-color: #00386a;
+
+    .footer-info {
+        h4,p{
+            color: #eee !important;
+        }
+        p{
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+    }
+
+}
+
 /********************************/
 /*          Media Queries       */
 /********************************/
