@@ -98,26 +98,24 @@
 /********************************/
 /*          Custom Buttons      */
 /********************************/
-.btn.btn-lg {padding: 14px 34px;}
-.btn.btn-hero,
-.btn.btn-hero:hover,
+.btn.btn-hero,.btn.btn-hero:hover,
 .btn.btn-hero:focus {
-    background-color: rgba(255,255,255,.1);
     box-shadow: none;
-    border-color: #fff;
     font-size: 20px;
     letter-spacing: 1px;
     margin-top: 15px;
+    padding: 14px 34px;
 }
 
-.btn--tertiary {
+.btn-hero-trans{
+    background-color: rgba(255,255,255,.1);
+    border-color: #fff;
+}
+
+.btn-hero-green{
     background-color: #4bba57;
-    box-shadow: none;
     border-color: #4bba57;
-    font-size: 20px;
-    letter-spacing: 1px;
     margin-right: 15px;
-    margin-top: 15px;
 }
 
 /********************************/
@@ -224,7 +222,44 @@
     }
 }
 
+.carousel-testimonial{
+    height: 250px;
+    background-color: #4bba57;
+    color: #fff;
 
+    .carousel-indicators > li, li.active{
+       width: 15px;
+       height: 15px;
+        border: 2px solid white;
+        margin: 2px;
+    }
+
+    div.carousel-inner{
+        height: 200px;
+
+        div.carousel-caption{
+            position: initial;
+            padding-top: 65px;
+
+            h3, h4{
+                color: white !important;
+                text-shadow: none;
+            }
+
+            h3{
+                font-style: italic;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+
+            i{
+                font-size: 16px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
 
 
 /********************************/
