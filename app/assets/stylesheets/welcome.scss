@@ -263,6 +263,33 @@
     }
 }
 
+.whyus{
+    margin: 60px 30px 60px 30px;
+    .container > .row{
+        text-align: center;
+        p{
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    .why-head{
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+
+    .btn-readmore{
+        background-color: #4bba57;
+        border-color: #4bba57;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-top: 15px;
+        padding: 14px 34px;
+        color: white !important;
+        box-shadow: 0 5px 12px -2px #6d6d6d;
+
+    }
+}
 
 /********************************/
 /*          Media Queries       */
