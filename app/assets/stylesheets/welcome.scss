@@ -125,6 +125,7 @@
 .btn-hero-green{
     background-color: #4bba57;
     border-color: #4bba57;
+    margin-left: 15px;
     margin-right: 15px;
 }
 
@@ -297,6 +298,25 @@
         box-shadow: 0 5px 12px -2px #6d6d6d;
 
     }
+}
+
+.footer{
+    padding: 60px 30px 60px 30px;
+    background-color: #00386a;
+
+    .footer-info {
+        h4,p{
+            color: #ddd !important;
+            @media screen and (max-width: 767px){
+                text-align: center;
+            }
+        }
+        p{
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+    }
+
 }
 
 /********************************/
