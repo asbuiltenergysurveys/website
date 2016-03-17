@@ -23,20 +23,26 @@
                 <a class="navbar-brand" href="#">
                     <%= image_tag("energy-logo.png",alt: "logo", class: "nav-logo") %>
                 </a>
-                <a class="navbar-text hidden-xs" href="#">
+                <a class="navbar-text hidden-xs hidden-sm" href="#">
                     <span>Specialist in <span class="navbar-text-green">ENERGY</span> surveys</span>
                 </a>
+                <div class="form-group form-inline navbar-login hidden-xs">
+                    <input type="text" name = "login" class="form-control" placeholder="Username">
+                    <input type = "password" name = "password" class="form-control" placeholder="Password">
+                    <button type="submit" class="btn btn-primary" value = "Sign In">SIGN IN</button>
+                </div>
 
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <form class="navbar-form navbar-right" role="search" action = "https://apps.psgconnect.co.uk/users/login" method = "post">
-                    <div class="form-group">
+                    <div class="form-group visible-xs">
                         <input type="text" name = "login" class="form-control" placeholder="Username">
                         <input type = "password" name = "password" class="form-control" placeholder="Password">
+                        <button type="submit" class="btn btn-primary" value = "Sign In">SIGN IN</button>
                     </div>
-                    <button type="submit" class="btn btn-primary" value = "Sign In">SIGN IN</button>
+
                 </form>
 
             </div><!-- /.navbar-collapse -->
