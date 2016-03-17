@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     root 'welcome#index'
     post 'welcome/find_local_office' => 'welcome#find_local_office'
     get 'about' => 'menu#about'
+    get 'residential-epc' => 'menu#resepc'
     # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
