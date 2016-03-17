@@ -301,7 +301,7 @@
 }
 
 .footer{
-    padding: 60px 30px 60px 30px;
+    padding: 60px 30px 15px 30px;
     background-color: #00386a;
 
     .footer-info {
@@ -315,6 +315,13 @@
             font-size: 12px;
             margin-bottom: 0px;
         }
+    }
+
+    .footer-cp{
+        text-align: center;
+        margin-top: 45px;
+        color: #798FA2;
+        font-size: 12px;
     }
 
 }
