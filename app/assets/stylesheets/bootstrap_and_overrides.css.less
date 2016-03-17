@@ -34,6 +34,7 @@
 @brand-primary: #4bba57;
 @navbar-height: 70px;
 @navbar-default-bg: #012c54;
+@grid-float-breakpoint: 10000px;
 
 h1,h2,h3,h4{
   font-weight: 300;
@@ -66,6 +67,7 @@ a.navbar-text{
   letter-spacing: 1px;
   margin: 26px 0 26px 0;
   text-decoration: none;
+  float: left;
 
   .navbar-text-green{
     color: @brand-primary !important;
@@ -81,14 +83,17 @@ a.navbar-text{
   border-color: #012c54 !important;
   background-color: #012c54 !important;
 
+  .icon-bar{
+    background-color: #fff !important;
+    height: 3px;
+    width: 26px;
+    border-radius: 0;
+  }
+
   &:hover, &:focus {
     .icon-bar{
       background-color: #ddd !important;
-    } 
-  }
-
-  .icon-bar{
-    background-color: #fff !important;
+    }
   }
 }
 
