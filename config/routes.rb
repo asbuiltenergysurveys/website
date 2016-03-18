@@ -24,6 +24,7 @@ Rails.application.routes.draw do
     get 'asbestos' => 'menu#asbestos'
     get 'aircon' => 'menu#aircon'
     get 'fire-risk' => 'menu#firerisk'
+    get 'news' => 'menu#news'
     # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
