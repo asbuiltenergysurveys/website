@@ -325,7 +325,8 @@
 }
 
 .main-menu{
-    padding: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
     h3{
         color: #fff !important;
@@ -333,6 +334,7 @@
 
     @media screen and (max-width: 765px){
         text-align: center;
+		
     }
 
 }
@@ -344,7 +346,7 @@
     .hero { width: 980px; }
 }
 @media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }
+    .hero h1 { font-size: 3em; }
 }
 @media (max-width: 760px){
 	.mobile-menu {
@@ -387,3 +389,6 @@
 	}
 }
 
+.mobile-menu {
+	overflow-y: hidden !important;
+}
