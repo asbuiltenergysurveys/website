@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag  'https://fonts.googleapis.com/css?family=Roboto:700,600,500,400,300' %>
 </head>
 <body>
@@ -20,30 +21,33 @@
                     <span class="icon-bar"></span>
                 
                 </button>
-                <a class="navbar-brand" href="#">
-                    <%= image_tag("energy-logo.png",alt: "logo", class: "nav-logo") %>
-                </a>
+                
+                    <%= link_to (image_tag("energy-logo.png",alt: "logo", class: "nav-logo")), root_path, class:"navbar-brand"%>
                 <a class="navbar-text hidden-xs hidden-sm" href="#">
                     <span>Specialist in <span class="navbar-text-green">ENERGY</span> surveys</span>
                 </a>
+
+                <% # TODO make this submit %>
+<form class="form-group form-inline hidden-xs" role="search" action = "https://apps.psgconnect.co.uk/" method = "post">
                 <div class="form-group form-inline navbar-login hidden-xs">
                     <input type="text" name = "login" class="form-control" placeholder="Username">
                     <input type = "password" name = "password" class="form-control" placeholder="Password">
                     <button type="submit" class="btn btn-primary" value = "Sign In">SIGN IN</button>
                 </div>
+			</form>
 
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <form class="navbar-form navbar-right" role="search" action = "https://apps.psgconnect.co.uk/users/login" method = "post">
-                    <div class="form-group visible-xs">
-                        <input type="text" name = "login" class="form-control" placeholder="Username">
-                        <input type = "password" name = "password" class="form-control" placeholder="Password">
-                        <button type="submit" class="btn btn-primary" value = "Sign In">SIGN IN</button>
+            <div class="collapse navbar-collapse mobile-menu" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-right visible-xs login-mobile" role="search" action = "https://apps.psgconnect.co.uk/users/login" method = "post">
+                    <div class="form-group mobile-signin ">
+                        <input type="text" name = "loginMobile" class="form-control input-lg username-mobile" placeholder="Username">
+                        <input type = "password" name = "passwordMobile" class="form-control input-lg password-mobile" placeholder="Password">
+                        <button type="submit" class="btn btn-primary btn-lg" value = "Sign In">SIGN IN</button>
                     </div>
-
                 </form>
+                <%= render("main_menu") %>
 
             </div><!-- /.navbar-collapse -->
 
