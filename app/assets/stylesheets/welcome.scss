@@ -318,11 +318,26 @@
         }
     }
 
+
+    .footer-logo{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        img{
+            padding-left: 7px;
+            padding-right: 7px;
+            height: 40px;
+            opacity: .6;
+        }
+
+    }
+
     .footer-cp{
         text-align: center;
-        margin-top: 45px;
+
         color: #798FA2;
         font-size: 12px;
+
     }
 
 }
