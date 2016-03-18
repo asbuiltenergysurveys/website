@@ -5,6 +5,12 @@ Rails.application.routes.draw do
     post 'welcome/find_local_office' => 'welcome#find_local_office'
     get 'about' => 'menu#about'
     get 'products' => 'menu#products'
+    get 'contact' => 'menu#contact'
+    get 'terms_and_conditions' => 'menu#termsandconditions'
+    get 'privacy_policy' => 'menu#privacypolicy'
+    get 'cookies' => 'menu#cookies'
+
+    #Product pages
     get 'residential-epc' => 'menu#resepc'
     get 'commercial-epc' => 'menu#commepc'
     get 'floorplans' => 'menu#floorplans'
@@ -12,7 +18,6 @@ Rails.application.routes.draw do
     get 'eco-boiler' => 'menu#ecoboiler'
     get 'decs' => 'menu#decs'
     get 'saps' => 'menu#saps'
-
     get 'air-pressure' => 'menu#pressure'
     get 'acoustic' => 'menu#acoustic'
     get 'sustainable-home' => 'menu#sustainable'
