@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     root 'welcome#index'
     post 'welcome/find_local_office' => 'welcome#find_local_office'
     get 'about' => 'menu#about'
+    get 'products' => 'menu#products'
     get 'residential-epc' => 'menu#resepc'
 
     get 'air-pressure' => 'menu#pressure'
