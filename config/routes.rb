@@ -6,6 +6,12 @@ Rails.application.routes.draw do
     get 'about' => 'menu#about'
     get 'products' => 'menu#products'
     get 'residential-epc' => 'menu#resepc'
+    get 'commercial-epc' => 'menu#commepc'
+    get 'floorplans' => 'menu#floorplans'
+    get 'greendeal' => 'menu#greendeal'
+    get 'eco-boiler' => 'menu#ecoboiler'
+    get 'decs' => 'menu#decs'
+    get 'saps' => 'menu#saps'
 
     get 'air-pressure' => 'menu#pressure'
     get 'acoustic' => 'menu#acoustic'
