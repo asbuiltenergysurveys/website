@@ -12,13 +12,13 @@ Rails.application.routes.draw do
     get 'eco-boiler' => 'menu#ecoboiler'
     get 'decs' => 'menu#decs'
     get 'saps' => 'menu#saps'
-
     get 'air-pressure' => 'menu#pressure'
     get 'acoustic' => 'menu#acoustic'
     get 'sustainable-home' => 'menu#sustainable'
     get 'asbestos' => 'menu#asbestos'
     get 'aircon' => 'menu#aircon'
     get 'fire-risk' => 'menu#firerisk'
+    get 'news' => 'menu#news'
     # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
