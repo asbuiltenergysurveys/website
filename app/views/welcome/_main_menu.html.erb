@@ -4,33 +4,33 @@
 
             <div class="col-sm-4 menu">
                 <h3><i class=" visible-xs fa fa-chevron-down"></i><span class="hidden-xs">Menu</span></h3>
-                <p><a href="http://www.psgenergy.co.uk/about-us">Home</a>  </p>
-                <p><a href="http://www.psgenergy.co.uk/quote">About Us</a>  </p>
-                <p><a href="http://www.psgenergy.co.uk/blog">Register</a>  </p>
-                <p><a href="http://www.psgenergy.co.uk/terms-and-conditions">News</a> </p>
-                <p><a href="http://www.psgenergy.co.uk/contact-us">Contact us</a>  </p>
+             	<p><%= link_to("Home", root_path) %></p>
+                <p><%= link_to("About us", about_path) %></p>
+                <p><a href="https://apps.psgconnect.co.uk/users/register">Register</a>  </p>
+                <p><%= link_to("News", news_path) %></p>
+                <p><%= link_to("Contact us", contact_path) %></p>
             </div>
 
             <div class="col-sm-4 products-menu">
                 <h3>Products</h3>
-                <p><a href="http://www.psgenergy.co.uk/residential-energy-performance-certificates/">Residential EPCs</a></p>
-                <p><a href="http://www.psgenergy.co.uk/commercial-energy-performance-certificates/">Commercial EPCs</a></p>
-                <p><a href="http://www.psgenergy.co.uk/floor-plans/">Floor Plans</a></p>
-                <p><a href="http://www.psgenergy.co.uk/green-deal-assessments/">Green Deal Assessments</a></p>
-                <p><a href="http://www.psgenergy.co.uk/eco-boiler-scheme/">Eco Boiler Scheme</a></p>
-                <p><a href="http://www.psgenergy.co.uk/decs/">DECs</a></p>
-                <p><a href="http://www.psgenergy.co.uk/saps/">SAPs</a></p>
+               	 <p><%= link_to("Residential EPCs", residential_epc_path) %></p>
+                 <p><%= link_to("Commercial EPCs", commercial_epc_path) %></p>
+                 <p><%= link_to("Floor Plans", floorplans_path) %></p>
+                 <p><%= link_to("Green Deal Assessments", greendeal_path) %></a></p>
+                 <p><%= link_to("Eco Boiler Scheme", eco_boiler_path) %></p>
+               	 <p><%= link_to("DECs", decs_path) %></p>
+                 <p><%= link_to("SAPs", saps_path) %></p>
             </div>
 
             <div class="col-sm-4 ">
                 <h3 class="hidden-xs">...</h3>
 
-                <p><a href="http://www.psgenergy.co.uk/air-pressure-testing">Air Pressure Testing</a></p>
-                <p><a href="http://www.psgenergy.co.uk/acoustic-testing">Acoustic Testing</a></p>
-                <p><a href="http://www.psgenergy.co.uk/code-for-homes">Code for Sustainable Homes</a></p>
-                <p><a href="http://www.psgenergy.co.uk/asbestos-services/">Asbestos Surveys</a> </p>
-                <p><a href="http://www.psgenergy.co.uk/air-conditioning-inspections/">Air Conditioning Inspections</a></p>
-                <p><a href="http://www.psgenergy.co.uk/fire-risk-assessments/">Fire Risk Assessments</a></p>
+                <p><%= link_to("Air Pressure Testing", air_pressure_path) %></p>
+                <p><%= link_to("Acoustic Testing", acoustic_path) %></p>
+                <p><%= link_to("Code for Sustainable Homes", sustainable_home_path) %></p>
+                <p><%= link_to("Asbestos Surveys", asbestos_path) %> </p>
+                <p><%= link_to("Air Conditioning Inspections", aircon_path) %></p>
+                <p><%= link_to("Fire Risk Assessments", fire_risk_path) %></p>
             </div>
         </div>
     </div>
