@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     post 'welcome/find_local_office' => 'welcome#find_local_office'
     get 'about' => 'menu#about'
     get 'products' => 'menu#products'
+    get 'local_office' => 'welcome#local_office'
     get 'contact' => 'menu#contact'
     get 'terms_and_conditions' => 'menu#termsandconditions'
     get 'privacy_policy' => 'menu#privacypolicy'
