@@ -1,31 +1,41 @@
 <p id="notice"><%= notice %></p>
+<div class="news-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <h1>News</h1>
+                <hr>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Summary</th>
+                        <th>Body</th>
+                        <th colspan="3"></th>
+                    </tr>
+                    </thead>
 
-<h1>Listing News</h1>
+                    <tbody>
+                    <% @news.each do |news| %>
+                        <tr>
+                            <td><%= news.title %></td>
+                            <td><%= news.summary %></td>
+                            <td><%= news.body %></td>
+                            <td><%= link_to 'Show', news %></td>
+                            <td><%= link_to 'Edit', edit_news_path(news) %></td>
+                            <td><%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                        </tr>
+                    <% end %>
+                    </tbody>
+                </table>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Summary</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+                <br>
+                <% if user_signed_in? %>
+                    <%= link_to 'ADD ARTICLE', new_news_path, class: "btn btn-success" %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <tbody>
-    <% @news.each do |news| %>
-      <tr>
-        <td><%= news.title %></td>
-        <td><%= news.summary %></td>
-        <td><%= news.body %></td>
-        <td><%= link_to 'Show', news %></td>
-        <td><%= link_to 'Edit', edit_news_path(news) %></td>
-        <td><%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
-
-<%= link_to 'New News', new_news_path %>
