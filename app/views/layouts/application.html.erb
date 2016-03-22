@@ -55,6 +55,26 @@
         </div><!-- /.container-fluid -->
     </nav>
 
+    <!--show alert and notice if relavant-->
+    <% if notice %>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                     <h4 class="text-center text-danger"><%= notice %></h4>
+                </div>
+            </div>
+        </div>
+    <% elsif alert %>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="alert alert-danger text-center" role="alert"><%= alert %></div>
+                </div>
+            </div>
+        </div>
+    <% end %>
+r
+
     <%= yield %>
     <%= render("welcome/footer") %>
 
