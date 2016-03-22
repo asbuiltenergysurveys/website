@@ -1,19 +1,27 @@
-<p id="notice"><%= notice %></p>
+<div class="news-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <h1><%= @news.title %></h1>
+                <hr>
+                <div class="news-full-text">
+                    <%= @news.body.html_safe %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @news.title %>
-</p>
+                    <p>
+                       <strong> <%= link_to 'Back', news_index_path %>  </strong>
+                    </p>
+                </div>
+                <% if user_signed_in? %>
+                    <div class="well-sm text-center">
+                        <%= link_to 'EDIT ARTICLE', edit_news_path(@news), class: "btn btn-warning" %>
+                        <%= link_to 'DESTROY ARTICLE', @news, method: :delete, data: { confirm: 'Are you sure?' },  class: "btn btn-danger" %>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
 
-<p>
-  <strong>Summary:</strong>
-  <%= @news.summary %>
-</p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @news.body %>
-</p>
 
-<%= link_to 'Edit', edit_news_path(@news) %> |
-<%= link_to 'Back', news_index_path %>
+

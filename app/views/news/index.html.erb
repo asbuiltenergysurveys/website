@@ -12,8 +12,8 @@
                         <h3><%= news.title %></h3>
                         <p>
                             <%= news.summary %>
-                            <%= link_to 'Read Article', news, class: 'read-more' %>
                         </p>
+                        <p><%= link_to 'Read Article', news, class: 'read-more' %></p>
 
                         <% if user_signed_in? %>
                             <%= link_to 'EDIT', edit_news_path(news), class: "btn btn-warning" %>
