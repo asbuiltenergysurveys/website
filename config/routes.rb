@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
 
 
-    devise_for :users
+
+    devise_for :users, :skip => [:sessions]
+    as :user do
+        get 'admin' => 'devise/sessions#new', :as => :new_user_session
+        post 'admin' => 'devise/sessions#create', :as => :user_session
+        delete 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
+    end
     root 'welcome#index'
     post 'welcome/find_local_office' => 'welcome#find_local_office'
     get 'about' => 'menu#about'
@@ -27,6 +33,9 @@ Rails.application.routes.draw do
     get 'aircon' => 'menu#aircon'
     get 'fire-risk' => 'menu#firerisk'
     get 'news' => 'menu#news'
+
+    get '*path' => redirect('/')
+
     # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
