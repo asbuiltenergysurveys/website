@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
-
-
+  resources :news
     devise_for :users, :skip => [:sessions]
     as :user do
         get 'admin' => 'devise/sessions#new', :as => :new_user_session
@@ -32,7 +31,7 @@ Rails.application.routes.draw do
     get 'asbestos' => 'menu#asbestos'
     get 'aircon' => 'menu#aircon'
     get 'fire-risk' => 'menu#firerisk'
-    get 'news' => 'menu#news'
+    get 'latestnews' => 'menu#news'
 
     get '*path' => redirect('/')
 
