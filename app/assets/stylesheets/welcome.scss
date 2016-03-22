@@ -288,12 +288,12 @@
         font-weight: 500;
     }
 
-    .btn-readmore{
+    .btn-readmore, .btn-readmore:active{
         background-color: #4bba57;
         border-color: #4bba57;
         font-size: 20px;
         letter-spacing: 1px;
-        margin-top: 30px;
+        //margin-top: 30px;
         padding: 14px 34px;
         color: white !important;
         box-shadow: 0 5px 12px -2px #6d6d6d;
