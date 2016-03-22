@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+    devise_for :users
     root 'welcome#index'
     post 'welcome/find_local_office' => 'welcome#find_local_office'
     get 'about' => 'menu#about'
