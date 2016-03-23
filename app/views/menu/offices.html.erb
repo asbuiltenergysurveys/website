@@ -8,10 +8,14 @@
 				<table>
 					<tr>
 						<th> Name </th>
+						<th> Tel: </th>
+						<th> E-mail: </th>
 					</tr>
 					<% @offices.each do |office|%>
 					<tr>
 						 <td><%= office.name %></td>
+						 <td><%= office.tel %></td>
+						 <td><%= office.email %></td>
 					 </tr>
 					<% end%>
 				</table>
