@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get 'products' => 'menu#products'
     get 'local_office' => 'welcome#local_office'
     get 'contact' => 'menu#contact'
+    get 'licensee' => 'menu#licensee'
     get 'terms_and_conditions' => 'menu#termsandconditions'
     get 'privacy_policy' => 'menu#privacypolicy'
     get 'cookies' => 'menu#cookies'
