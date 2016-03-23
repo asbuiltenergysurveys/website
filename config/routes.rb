@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     root 'welcome#index'
     post 'welcome/find_local_office' => 'welcome#find_local_office'
     get 'about' => 'menu#about'
+    get 'offices' =>'menu#offices'
     get 'products' => 'menu#products'
     get 'local_office' => 'welcome#local_office'
     get 'contact' => 'menu#contact'
