@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
     resources :news
+    resources :contacts, only: [:new, :create]
     devise_for :users, :skip => [:sessions]
     as :user do
         get 'admin' => 'devise/sessions#new', :as => :new_user_session
@@ -13,7 +14,6 @@ Rails.application.routes.draw do
     get 'offices' =>'menu#offices'
     get 'products' => 'menu#products'
     get 'local_office' => 'welcome#local_office'
-    get 'contact' => 'menu#contact'
     get 'licensee' => 'menu#licensee'
     get 'terms_and_conditions' => 'menu#termsandconditions'
     get 'privacy_policy' => 'menu#privacypolicy'
