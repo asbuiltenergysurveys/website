@@ -4,6 +4,17 @@
 			<div class="col-xs-12 col-md-10 col-md-offset-1">
 				<h1>Offices</h1>
 				<hr>
+				<p>List of local offices in England & Wales:</p>
+				<table>
+					<tr>
+						<th> Name </th>
+					</tr>
+					<% @offices.each do |office|%>
+					<tr>
+						 <td><%= office.name %></td>
+					 </tr>
+					<% end%>
+				</table>
 			</div>
 		</div>	
 	</div>
