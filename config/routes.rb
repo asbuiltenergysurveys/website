@@ -32,6 +32,7 @@ Rails.application.routes.draw do
     get 'asbestos' => 'menu#asbestos'
     get 'aircon' => 'menu#aircon'
     get 'fire-risk' => 'menu#firerisk'
+    get 'legionella' => 'menu#legionella'
 
 
     get '*path' => redirect('/')
