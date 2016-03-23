@@ -90,4 +90,9 @@ Rails.application.configure do
           :domain         => 'heroku.com',
           :enable_starttls_auto => true
   }
+
+  #heroku assets
+  config.serve_static_assets = true
+  config.assets.compile = true
+
 end
