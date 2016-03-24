@@ -426,9 +426,6 @@
 	.password-mobile {
 		margin-bottom: 15px;
 	}
-	.offices p {
-		text-align: center;
-	}
 }
 
 .local-offices h3 {
@@ -479,3 +476,14 @@
 	font-size: 23px;
 }
 
+@media (max-width: 750px){
+	.offices p {
+		text-align: center;
+	}
+}
+
+@media (max-width: 1000px){
+	.local-offices {
+		width: 90%;
+	}
+}
