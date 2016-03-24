@@ -428,3 +428,57 @@
 	}
 }
 
+.local-offices h3 {
+	font-size: 18px ;
+	padding-top: 50px;
+  
+}
+
+.local-offices {
+	columns: 50px 2;
+	-webkit-columns: 50px 2;
+  	-moz-columns: 50px 2;
+	 width: 80em;	
+}
+
+.local-offices ul {
+	margin: 0;
+	    -webkit-column-break-inside: avoid; /* Chrome, Safari */
+	page-break-inside: avoid;           /* Theoretically FF 20+ */
+	break-inside: avoid-column;         /* IE 11 */
+	display:table;
+}
+
+.local-offices h4 {
+	font-size: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.local-offices-mobile h3 {
+	margin-top: 50px;
+	font-size: 18px;
+}
+
+.local-offices-mobile h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	font-size: 16px;
+}
+
+.local-offices-mobile {
+	text-align: center;
+}
+
+.offices p {
+	font-size: 23px;
+}
+
+@media (max-width: 900px) {
+	.offices p {
+		text-align: center;
+	}
+}
+
