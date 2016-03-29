@@ -436,7 +436,8 @@
 	columns: 50px 2;
 		-webkit-columns: 50px 2;
   		-moz-columns: 50px 2;
-	 width: 80em;	
+	 width: 80em;
+	 margin-bottom: 30px;
 }
 
 .local-offices ul {
@@ -486,4 +487,8 @@
 	.local-offices {
 		width: 90%;
 	}
+}
+
+.offices {
+	margin-top: 60px;
 }
