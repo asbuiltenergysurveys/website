@@ -1,24 +1,26 @@
-<div class="nav-page">
+<div class="local-offices-page">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-10 col-md-offset-1">
+			<div class=" offices col-lg-12">
 				<h1>Offices</h1>
 				<hr>
-				<p>List of local offices in England & Wales:</p>
-				<table>
-					<tr>
-						<th> Name </th>
-						<th> Tel: </th>
-						<th> E-mail: </th>
-					</tr>
+				<p>List of local offices in England & Wales: </p>
+				<div class="local-offices col-lg-12  col-md-10 hidden-xs">
 					<% @offices.each do |office|%>
-					<tr>
-						 <td><%= office.name %></td>
-						 <td><%= office.tel %></td>
-						 <td><%= office.email %></td>
-					 </tr>
+					<ul>
+						 <h3><strong><%= office.name %></strong></h3>
+						 <h4><i class="fa fa-envelope"></i>  <a href="mailto:<%= office.email %>"><%= office.email %></a></h4>
+						 <h4><i class="fa fa-phone"></i>  <a href="tel:<%= office.tel %>"><%= office.tel %></a></h4>
+					 </ul>
 					<% end%>
-				</table>
+				</div>
+				<div class="local-offices-mobile col-xs-12 hidden-lg hidden-sm hidden-md" >
+					<% @offices.each do |office|%>
+						 <h3><strong><%= office.name %></strong></h3>
+						 <h4><i class="fa fa-envelope"></i> <a href="mailto:<%= office.email %>"><%= office.email %></a></h4>
+						 <h4><i class="fa fa-phone"></i> <a href="tel:<%= office.tel %>"><%= office.tel %></a></h4>
+					<% end%>
+				</div>
 			</div>
 		</div>	
 	</div>
