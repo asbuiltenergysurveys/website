@@ -437,7 +437,6 @@
 		-webkit-columns: 50px 2;
   		-moz-columns: 50px 2;
 	 width: 80em;
-	 margin-bottom: 30px;
 }
 
 .local-offices ul {
@@ -490,5 +489,6 @@
 }
 
 .offices {
-	margin-top: 60px;
+	padding-bottom: 60px;
+	padding-top: 30px;
 }
