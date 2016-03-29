@@ -1,20 +1,30 @@
 <div class="local-offices-page">
 	<div class="container">
+
 		<div class="row">
-			<div class=" offices">
-				<h1>Offices</h1>
-				<hr>
-				<p>List of local offices in England & Wales: </p>
-				<div class="local-offices col-xs-12 col-md-5 col-md-offset-1">
-					<% @offices.each do |office|%>
-					<ul>
-						 <h3><strong><%= office.name %></strong></h3>
-						 <h4><i class="fa fa-envelope"></i>  <a href="mailto:<%= office.email %>"><%= office.email %></a></h4>
-						 <h4><i class="fa fa-phone"></i>  <a href="tel:<%= office.tel %>"><%= office.tel %></a></h4>
-					 </ul>
-					<% end%>
-				</div>
-			</div>
-		</div>	
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <h1>Offices</h1>
+                <hr>
+                <br>
+                <p>Our local offices across England and Wales; for further information, or to discuss how we can assist you please contact PSG Head Office or alternatively use the post code finder below to contact your local office. We look forward to speaking with you... </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="row offices">
+                    <% @offices.each do |office| %>
+                        <div class="col-xs-12 col-md-6">
+                             <h3><%= office.name %></h3>
+                             <p><i class="fa fa-envelope"></i>  <a href="mailto:<%= office.email %>"><%= office.email %></a></p>
+                             <p><i class="fa fa-phone"></i>  <a href="tel:<%= office.tel %>"><%= office.tel %></a></p>
+                            <hr>
+                        </div>
+                    <% end%>
+                </div>
+	        </div>
+	    </div>
 	</div>
 </div>
+
+<%= render("welcome/postcode") %>
