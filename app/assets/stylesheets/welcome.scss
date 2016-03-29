@@ -432,63 +432,70 @@
 	font-size: 23px;
 }
 
-.local-offices {
-	columns: 50px 2;
-		-webkit-columns: 50px 2;
-  		-moz-columns: 50px 2;
-	 width: 80em;
+@media (min-width: 901px) {
+
+		.local-offices {
+			columns: 50px 2;
+			-webkit-columns: 50px 2;
+  			-moz-columns: 50px 2;
+	 	  	 width: 80em;
+	   }
+
+	   .local-offices ul {
+		   margin: 0;
+	    	-webkit-column-break-inside: avoid; /* Chrome, Safari */
+			page-break-inside: avoid;           /* Theoretically FF 20+ */
+			break-inside: avoid-column;         /* IE 11 */
+			display:table;
+			padding-bottom: 10px;
+		}
+
+		.local-offices h3 {
+			font-size: 18px ;
+			padding-top: 30px; 
+		}
+
+		.local-offices h4 {
+    		text-overflow: ellipsis;
+    		white-space: nowrap;
+   		 	overflow: hidden;
+		 	font-size: 16px;
+	 }
 }
 
-.local-offices ul {
-	margin: 0;
-	    -webkit-column-break-inside: avoid; /* Chrome, Safari */
-	page-break-inside: avoid;           /* Theoretically FF 20+ */
-	break-inside: avoid-column;         /* IE 11 */
-	display:table;
-	padding-bottom: 10px;
+@media (max-width: 901px ){
+	
+		.offices p {
+			padding-left:20px;
+		}
+
+		.local-offices h3 {
+			margin-top: 50px;
+			font-size: 18px;
+		}
+
+		.local-offices h4 {
+    		text-overflow: ellipsis;
+   		 	white-space: nowrap;
+    	 	overflow: hidden;
+		 	font-size: 16px;
+		}
 }
 
-.local-offices h3 {
-	font-size: 18px ;
-	padding-top: 30px; 
-}
-
-.local-offices h4 {
-	font-size: 16px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.local-offices-mobile {
-	text-align: center;
-}
-
-.local-offices-mobile h3 {
-	margin-top: 50px;
-	font-size: 18px;
-}
-
-.local-offices-mobile h4 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-	font-size: 16px;
-}
-
-@media (max-width: 750px){
-	.offices p {
-		text-align: center;
-	}
-}
 
 @media (max-width: 1000px){
-	.local-offices {
-		width: 90%;
-	}
+		.local-offices {
+			width: 90%;
+		}
 }
 
 .offices {
 	padding-bottom: 60px;
 	padding-top: 30px;
+}
+
+.offices h1 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding-left: 10px;
 }
