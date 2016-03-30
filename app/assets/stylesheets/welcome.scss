@@ -253,6 +253,12 @@
             position: initial;
             padding-top: 65px;
 
+            @media screen and (max-width: 640px){
+                padding-top: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
             h3, h4{
                 color: white !important;
                 text-shadow: none;
