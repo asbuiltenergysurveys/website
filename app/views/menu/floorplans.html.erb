@@ -1,10 +1,16 @@
 <%= image_tag "Floorplans.jpg", class: 'img-responsive img-fill hidden-xs' %>
 <div class="nav-page">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-10 col-md-offset-1">
-				<h1>Floor Plans</h1>
-				<hr>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+                <h1>
+                    <%= link_to "Products > ", products_path, class:"hidden-xs"%></a>Floor Plans<br>
+                </h1>
+                <hr>
+			</div>
+		</div>		
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
 					<p>
 						PSG Energy utilise bespoke software to provide our 2D &amp; 3D Floorplans.
 					</p>
@@ -33,7 +39,13 @@
                                 Thick wall function to accurately represent character properties
                             </li>
                     </ul>
+					<p>
+						<br>
+						<%= link_to "More products...", products_path, class: "more-products"%>
+					
+					</p>
 			</div>
+			<%= render("menu/order")%>
 		</div>	
 	</div>
 </div>

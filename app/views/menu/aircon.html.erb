@@ -1,11 +1,15 @@
 <%= image_tag "Air-Conditioning.jpg", class: 'img-responsive img-fill hidden-xs' %><div class="nav-page">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-10 col-md-offset-1">
-                <h1>
-                    Air Conditioning Inspections<br>
-                </h1>
-                <hr>
+       <div class="row">
+           <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+               <h1>
+                   <%= link_to "Products > ", products_path, class:"hidden-xs"%></a>Air Conditioning Inspections<br>
+               </h1>
+               <hr>
+		</div>
+	</div>		
+       <div class="row">
+           <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
                 <p>
                     Many commercial buildings and an increasing number of homes have air conditioning systems. These systems should be carefully maintained and managed in order that they do not consume too much energy.
                 </p>
@@ -21,7 +25,13 @@
                 <p>
                     The inspection, which is done by an accredited energy assessor will include an assessment of efficiency, a review of their sizing and advice on improvements or replacements and alternative solutions. Inspection reports for air conditioning inspections are not generated from software. Inspections follow the convention described in TM44, published by CIBSE.
                 </p>
+				<p>
+					<br>
+					<%= link_to "More products...", products_path, class: "more-products"%>
+					
+				</p>
             </div>
+			<%= render("menu/order")%>
         </div>
     </div>
 </div>

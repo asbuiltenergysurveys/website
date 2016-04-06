@@ -9,12 +9,17 @@
 		font-size: 16px;
 		color: #333;	
 	}
-    h3 {
-        margin-top: 0
+    h2, h3 {
+        margin-top: 0;
+		margin-bottom:20px;
     }
-    .know-more{
-        background-color: #eeeeee;
-        margin: 15px;
-        padding: 30px;
-    }
+	
+	.side-button{
+		margin-top: 20px;
+	}
+	
+	.more-products{		
+		font-size: 16px;
+		font-weight: 500;		
+	}
 }

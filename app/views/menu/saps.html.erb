@@ -1,10 +1,16 @@
 <%= image_tag "saps.jpg", class: 'img-responsive img-fill hidden-xs' %>
 <div class="nav-page">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-10 col-md-offset-1">
-				<h1>SAPS</h1>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+                <h1>
+                    <%= link_to "Products > ", products_path, class:"hidden-xs"%></a>SAPS<br>
+                </h1>
                 <hr>
+			</div>
+		</div>		
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
 				<p>
 					Deciding on sustainable, environmentally efficient construction is no longer simply a question of conscience. The UK Government has put in place strategies that aim to reduce greenhouse gas emissions, particularly carbon dioxide, which research has proved to be a major contributing factor to global warming.
 				</p>
@@ -107,8 +113,13 @@
 				<p>
 					If not available, then U-Values can be calculated for most items (assuming that there is a specification).
 				</p>
-
+				<p>
+					<br>
+					<%= link_to "More products...", products_path, class: "more-products"%>
+					
+				</p>
 			</div>
+			<%= render("menu/order")%>
 		</div>	
 	</div>
 </div>

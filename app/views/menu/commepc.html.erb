@@ -1,10 +1,17 @@
 <%= image_tag "commercial-epc.jpg", class: 'img-responsive img-fill hidden-xs' %>
 <div class="nav-page">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-10 col-md-offset-1">
-				<h1>Commercial Epc's</h1>
-				<hr>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+                <h1>
+                    <%= link_to "Products > ", products_path, class:"hidden-xs"%></a>Commercial EPC's<br>
+                </h1>
+                <hr>
+			</div>
+		</div>		
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+		
 					<p>
 						Energy Performance Certificates (EPCs) tell you how energy efficient a property is on a scale of A-G. The most efficient properties – which should have the lowest fuel bills – are in band A. The Certificate also explains on a scale of A-G, the impact the property has on the environment. Better-rated properties should have less impact through carbon dioxide (CO2) emissions. The average property in the UK is in bands D-E for both ratings.
 					</p>
@@ -20,7 +27,13 @@
 					<p>
 						An accredited energy assessor will need to physically inspect the property and collect information. This will include external or internal measurements, details about the construction and the type of heating/hot water used in the property. The assessor will need to access all the rooms in the property as well as the boiler and loft. The assessor will need to take photographs of items such as the boiler, loft insulation, double glazing etc as they are quality audited on a regular basis.
 					</p>
+					<p>
+						<br>
+						<%= link_to "More products...", products_path, class: "more-products"%>
+					
+					</p>
 			</div>
+			<%= render("menu/order")%>
 		</div>	
 	</div>
 </div>
