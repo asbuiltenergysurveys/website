@@ -1,10 +1,16 @@
 <%= image_tag "Green-Deal-Assessments.jpg", class: 'img-responsive img-fill hidden-xs' %>
 <div class="nav-page">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-7 col-md-offset-1">
-				<h1>Green Deal Assessments</h1>
-				<hr>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+                <h1>
+                    <%= link_to "Products > ", products_path, class:"hidden-xs"%></a>Green Deal Assessments<br>
+                </h1>
+                <hr>
+			</div>
+		</div>		
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
                 <p>
                     The Green Deal is a government initiative which has been introduced to help transform the energy efficiency of Britain's property stock. It enables property owners to make energy saving improvements to their buildings at no up front cost, but instead make installments through their energy bill.
                 </p>
@@ -20,8 +26,11 @@
                 <p>
                     PSG Energy have employed Green Deal Advisors who can give advice and produce independent Green Deal reports.
                 </p>
-				<br>
-				<%= link_to "More products...", products_path, class: "more-products"%>
+				<p>
+					<br>
+					<%= link_to "More products...", products_path, class: "more-products"%>
+					
+				</p>
 			</div>
 			<%= render("menu/order")%>
 		</div>	

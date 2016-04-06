@@ -2,10 +2,17 @@
 <%= image_tag "legionella.jpg", class: 'img-responsive img-fill hidden-xs' %>
 <div class="nav-page">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-7 col-md-offset-1">
-                <h1>What is Legionnaires Disease?</h1>
-                <hr>
+       <div class="row">
+           <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+               <h1>
+                   <%= link_to "Products > ", products_path, class:"hidden-xs"%></a>What is Legionnaires Disease?<br>
+               </h1>
+               <hr>
+		</div>
+	</div>		
+       <div class="row">
+           <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+       
                 <p>
                     Legionnaires Disease (also known as Legionella) is a severe form of lung infection which is spread by water sources and articial water supply systems such as air conditioning systems. Often mis-diagnosed as flu or pneumonia, the disease is most likely to affect men over the age of 45 with deficient immune systems, are smokers or have exisiting breathing problems.
                 </p>
@@ -27,8 +34,11 @@
                 </p>
                 <br>
                 <p>To book your Legionella Risk Assessment from one of our fully trained Legionella Risk Assessors, contact us today.</p>
-				<br>
-				<%= link_to "More products...", products_path, class: "more-products"%>
+				<p>
+					<br>
+					<%= link_to "More products...", products_path, class: "more-products"%>
+					
+				</p>
             </div>
 			<%= render("menu/order")%>
         </div>

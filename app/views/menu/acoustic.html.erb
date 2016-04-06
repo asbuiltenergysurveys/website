@@ -2,11 +2,15 @@
 <div class="nav-page">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-7 col-md-offset-1">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
                 <h1>
-                    Acoustic Testing<br>
+                    <%= link_to "Products > ", products_path, class:"hidden-xs"%></a>Acoustic Testing<br>
                 </h1>
                 <hr>
+			</div>
+		</div>		
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
                 <p>
                     Acoustic or sound insulation testing is undertaken on newly built or buildings undergoing renovation to ascertain the level of sound insulation in certain building elements. The test measures the amount of sound which can pass through these elements and indicates if the level is acceptable to neighbours adjoining the property being tested.
                 </p>
@@ -14,8 +18,11 @@
                 <p>
                     PSG Energy can provide UKAS accredited sound testing and sound insulation testing on all types of buildings to comply with Part E Building Regulations.
                 </p>
-				<br>
-				<%= link_to "More products...", products_path, class: "more-products"%>
+				<p>
+					<br>
+					<%= link_to "More products...", products_path, class: "more-products"%>
+					
+				</p>
             </div>
 			<%= render("menu/order")%>
         </div>

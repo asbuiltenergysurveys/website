@@ -1,12 +1,16 @@
 <%= image_tag "fire-risk-assessment.jpg", class: 'img-responsive img-fill hidden-xs' %>
 <div class="nav-page">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-7 col-md-offset-1">
-                <h1>
-                    Fire Risk Assessments
-                </h1>
-                <hr>
+       <div class="row">
+           <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+               <h1>
+                   <%= link_to "Products > ", products_path, class:"hidden-xs"%></a>Fire Risk Assessments<br>
+               </h1>
+               <hr>
+		</div>
+	</div>		
+       <div class="row">
+           <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
                 <p>
                     The Regulatory Reform (Fire Safety) Order 2005 covers general fire safety in England and Wales. Under this legislation, if you are an employer (and/or building owners or occupiers), you must carry out a must carry out a<br>
                     fire safety risk assessment and keep it up to date.
@@ -19,8 +23,11 @@
                 <p>
                     PSG Energy have a team of expert surveyors who can perform your Fire Risk Assessment and ensure that it is kept up to date.
                 </p>
-				<br>
-				<%= link_to "More products...", products_path, class: "more-products"%>
+				<p>
+					<br>
+					<%= link_to "More products...", products_path, class: "more-products"%>
+					
+				</p>
             </div>
 			<%= render("menu/order")%>
         </div>

@@ -1,10 +1,17 @@
 <%= image_tag "DECS.jpg", class: 'img-responsive img-fill hidden-xs' %>
 <div class="nav-page">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-7 col-md-offset-1">
-				<h1>Display Energy Certificates</h1>
-				<hr>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+                <h1>
+                    <%= link_to "Products > ", products_path, class:"hidden-xs"%></a>Display Energy Certificates<br>
+                </h1>
+                <hr>
+			</div>
+		</div>		
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+		
 					<p>
 						Since October 2008 there has been an obligation to display a Display Energy Certificate (DEC) in a prominent place in buildings occupied by public authorities and institutions providing public services where the total useful floor area of the building exceeds 1000m2 and the building is frequently visited by the public. Since the research was undertaken changes have been made to The Energy Performance of Buildings (England and Wales) Regulations 2012 (as amended) which came into force in January 2013 which reduced the size threshold to 500m² and removed the requirement for institutions providing public services to large numbers of people that are not public authorities. They are also required to possess or control a valid accompanying Advisory Report (AR). The validity period of these two documents is determined by the size of the building (see chart below). There is no statutory requirement on private sector organisations to have a DEC but they may voluntarily choose to have one.
 					</p>
@@ -101,8 +108,11 @@
 					<p>
 						At PSG Energy we have fully trained and experienced assessors who understand some of the complexities that larger public and private buildings present.
 					</p>
-					<br>
-					<%= link_to "More products...", products_path, class: "more-products"%>
+					<p>
+						<br>
+						<%= link_to "More products...", products_path, class: "more-products"%>
+					
+					</p>
 			</div>
 			<%= render("menu/order")%>
 		</div>	

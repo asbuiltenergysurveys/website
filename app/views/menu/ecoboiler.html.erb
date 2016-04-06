@@ -1,9 +1,16 @@
 <%= image_tag "eco.jpg", class: 'img-responsive img-fill hidden-xs' %><div class="nav-page">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-7 col-md-offset-1">
-				<h1>Eco Boiler Scheme</h1>
-				<hr>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+                <h1>
+                    <%= link_to "Products > ", products_path, class:"hidden-xs"%></a>Eco Boiler Scheme<br>
+                </h1>
+                <hr>
+			</div>
+		</div>		
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-7 col-lg-offset-1">
+		
 					<p>
 						Grants are available to pay for the replacement of inefficient or broken boilers. The grants can be accessed by home owners and private tenants who receive the qualifying benefit, tax credit or allowance. Grants normally cover the full cost and <strong>do not have to be paid back*.</strong>
 					</p>
@@ -108,9 +115,11 @@
 					<p>
 						PSG Energy&nbsp;work in partnership with a reputable installer network.&nbsp;
 					</p>
- 				<br>
- 				<%= link_to "More products...", products_path, class: "more-products"%>
-
+				<p>
+					<br>
+					<%= link_to "More products...", products_path, class: "more-products"%>
+					
+				</p>
 			</div>
 			<%= render("menu/order")%>
 		</div>	
