@@ -123,7 +123,7 @@
     border-color: #55d262;
 }
 
-.btn-hero-green{
+.btn-hero-green {
     background-color: #4bba57;
     border-color: #4bba57;
     margin-left: 15px;
@@ -154,22 +154,23 @@
 /********************************/
 /*       USP traits     */
 /********************************/
-.traits{
+.traits {
     margin:30px 30px 60px 30px;
     color: #1d1d1d !important;
 
-    .trait-item{
+    .trait-item {
         text-align: center;
         color: #00386a;
         margin-top: 30px;
-        img{
+		
+        img {
             height: 68px;
             width: 67px;
         }
 
     }
 
-    .trait-title{
+    .trait-title {
         text-transform: uppercase;
         font-size: 24px;
         font-weight: 300;
@@ -179,7 +180,7 @@
         padding: 30px;
         margin: 0;
     }
-    .trait-description{
+    .trait-description {
         margin: 0;
         padding: 30px 30px 0;
         font-size: 16px;
@@ -198,22 +199,22 @@
 /********************************/
 /*       Find postcode          */
 /********************************/
-.psg-finder{
+.psg-finder {
     text-align: center;
     background-color: #eeeeee;
     padding: 60px 30px 60px 30px;
 
-    svg{
+    svg {
         fill: currentColor;
     }
 
-    .psg-finder-icon{
+    .psg-finder-icon {
 
         color: #00386a !important;
         width: 69px;
         height: 80px;
     }
-    .psg-finder-heading{
+    .psg-finder-heading {
         text-transform: uppercase;
         font-size: 32px;
         font-weight: 300;
@@ -222,7 +223,7 @@
         margin: 0;
     }
 
-    .input-group-lg{
+    .input-group-lg {
         margin: 10px;
         input {
             border-radius: 0px !important;
@@ -231,7 +232,7 @@
             -moz-box-shadow: none !important;
             box-shadow: none !important;
         }
-        .input-group-addon{
+        .input-group-addon {
             border-radius: 0px;
             border-color: #4bba57;
             background-color: #4bba57;
@@ -240,45 +241,45 @@
     }
 }
 
-.carousel-testimonial{
+.carousel-testimonial {
     height: 250px;
     background-color: #4bba57;
     color: #fff;
 
-    .carousel-indicators > li, li.active{
+    .carousel-indicators > li, li.active {
        width: 15px;
        height: 15px;
         border: 2px solid white;
         margin: 2px;
     }
 
-    div.carousel-inner{
+    div.carousel-inner {
         height: 200px;
 
-        div.carousel-caption{
+        div.carousel-caption {
             padding-top: 65px;
             left: auto;
             right: auto;
             position: relative;
 
-            @media screen and (max-width: 640px){
+            @media screen and (max-width: 640px) {
                 padding-top: 10px;
                 padding-left: 5px;
                 padding-right: 5px;
             }
 
-            h3, h4{
+            h3, h4 {
                 color: white !important;
                 text-shadow: none;
             }
 
-            h3{
+            h3 {
                 font-style: italic;
                 margin-bottom: 20px;
                 letter-spacing: 1px;
             }
 
-            i{
+            i {
                 font-size: 16px;
                 margin-left: 10px;
                 margin-right: 10px;
@@ -287,22 +288,24 @@
     }
 }
 
-.whyus{
+.whyus {
     margin: 60px 30px 60px 30px;
-    .container > .row{
-        text-align: center;
-        p{
+	
+    .container > .row {
+		 text-align: center;
+		
+        p {
             font-size: 16px;
             font-weight: 500;
         }
     }
 
-    .why-head{
+    .why-head {
         margin-bottom: 30px;
         font-weight: 500;
     }
 
-    .btn-readmore, .btn-readmore:active{
+    .btn-readmore, .btn-readmore:active {
         background-color: #4bba57;
         border-color: #4bba57;
         font-size: 20px;
@@ -315,29 +318,30 @@
     }
 }
 
-.footer{
+.footer {
     padding: 60px 30px 15px 30px;
     background-color: #00386a;
 
     .footer-info {
-        h4,p{
+        h4,p {
             color: #ddd !important;
             @media screen and (max-width: 767px){
                 text-align: center;
             }
         }
-        p{
+        p {
             font-size: 12px;
             margin-bottom: 0px;
         }
     }
 
 
-    .footer-logo{
+    .footer-logo {
         text-align: center;
         margin-top: 15px;
         margin-bottom: 15px;
-        img{
+		
+        img {
             padding-left: 7px;
             padding-right: 7px;
             height: 60px;
@@ -346,7 +350,7 @@
 
     }
 
-    .footer-cp{
+    .footer-cp {
         text-align: center;
 
         color: #798FA2;
@@ -362,16 +366,16 @@
 
 }
 
-.navbar-login{
+.navbar-login {
     float: right;
     margin: 20px 15px 20px 15px;
 }
 
-.main-menu{
+.main-menu {
 	padding-top: 10px;
 	padding-bottom: 10px;
 
-    h3{
+    h3 {
         color: #fff !important;
     }
 
@@ -448,24 +452,24 @@
 	}
 }
 
-.local-offices-page{
+.local-offices-page {
 	margin-top: 30px;
     margin-bottom: 60px;
 	
-    .offices{
+    .offices {
         margin-top: 30px;
     }
 	
-    p{
+    p {
         font-size: 16px
     }
 	
-    hr{
+    hr {
         margin-top: 30px;
         margin-bottom: 15px;
     }
 	
-    h3{
+    h3 {
         font-weight: 500;
     }
 }
