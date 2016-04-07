@@ -404,12 +404,16 @@
 /********************************/
 /*          Media Queries       */
 /********************************/
-@media screen and (min-width: 980px){
+@media screen and (min-width: 980px) {
+	
     .hero { width: 980px; }
 }
-@media screen and (max-width: 640px){
+
+@media screen and (max-width: 640px) {
+	
     .hero h1 { font-size: 2em; }
 }
+
 @media (max-width: 760px){
 	.mobile-menu {
 		overflow-y: auto;
