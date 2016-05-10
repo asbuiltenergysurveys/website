@@ -401,6 +401,21 @@
     background-color: #eee;
 }
 
+.licensee{
+
+    .benefit{
+        color: #4bba57;
+    }
+    td{
+        font-size: 16px;
+        border: 0 !important;
+
+    }
+    .table-striped > tbody > tr:nth-child(odd) {
+        background-color: #f5f5f5;
+    }
+}
+
 /********************************/
 /*          Media Queries       */
 /********************************/
