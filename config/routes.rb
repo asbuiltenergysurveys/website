@@ -29,7 +29,7 @@ Rails.application.routes.draw do
     get 'saps' => 'menu#saps'
     get 'air-pressure' => 'menu#pressure'
     get 'acoustic' => 'menu#acoustic'
-    get 'sustainable-home' => 'menu#sustainable'
+    #get 'sustainable-home' => 'menu#sustainable'
     get 'asbestos' => 'menu#asbestos'
     get 'aircon' => 'menu#aircon'
     get 'fire-risk' => 'menu#firerisk'
