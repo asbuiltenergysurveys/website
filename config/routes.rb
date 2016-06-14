@@ -23,7 +23,7 @@ Rails.application.routes.draw do
     get 'residential-epc' => 'menu#resepc'
     get 'commercial-epc' => 'menu#commepc'
     get 'floorplans' => 'menu#floorplans'
-    get 'greendeal' => 'menu#greendeal'
+    #get 'greendeal' => 'menu#greendeal'
     get 'eco-boiler' => 'menu#ecoboiler'
     get 'decs' => 'menu#decs'
     get 'saps' => 'menu#saps'
@@ -37,7 +37,7 @@ Rails.application.routes.draw do
 
 
     get '*path' => redirect('/')
-    
+
     # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
